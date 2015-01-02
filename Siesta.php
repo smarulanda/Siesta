@@ -11,10 +11,9 @@
 
 class Siesta {
 
+	protected $base_path;
 	protected $request_uri;
 	protected $request_method;
-	protected $base_path;
-	protected $defined_routes = array();
 	protected $http_methods = array('get', 'post', 'put', 'delete', 'patch');
 	protected $wild_cards = array('int' => '/^[0-9]+$/', 'any' => '/^[0-9A-Za-z]+$/');
 
