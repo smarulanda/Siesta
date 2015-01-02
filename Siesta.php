@@ -27,7 +27,8 @@ class Siesta {
 	function __construct($base_path = '') {
 		$this->base_path = $base_path;
 
-		$this->request_uri = $_SERVER['REQUEST_URI'];
+		// Remove query string and trim trailing slash
+		$this->request_uri = rtrim(strtok($_SERVER['REQUEST_URI'], '?'), '/');
 		$this->request_method = $this->_determine_http_method();
 	}
 
