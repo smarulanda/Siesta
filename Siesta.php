@@ -6,7 +6,7 @@
  * A micro php router, ready to REST
  *
  * @author		Sebastian Marulanda
- * @link		http://sebastianmarulanda.com/
+ * @link		http://marulanda.me/
  */
 
 class Siesta {
